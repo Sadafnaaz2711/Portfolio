@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .about-section, .projects-section, .skills-section, .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .about-image {
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            margin-bottom: 30px; /* Increased space between image and text */
+}
+
+        .about-image, .card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+        .about-text, .skills-section .card-body {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .skills-section .card-img-top {
+        height: 100px; /* Decrease height */
+        object-fit: contain; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Adjust margin if needed */
+        }
+
+        .card {
+            margin: 15px 0;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .btn-custom {
+            margin-top: 10px;
+        }
+        .contact-section {
+            background-color: #333;
+            color: #fff;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-info .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ff007f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .social-icon img {
+            width: 20px;
+            height: 20px;
+        }
+        .social-icon:hover {
+            background-color: #e6007e;
+        }
+        .social-icon:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h1>About</h1>
+        <img src="img/About/about.jpg" alt="About Image" class="about-image">
+        <div class="about-text">
+            <p>Hello! I'm Sadafnaaz Saiyed, a recent graduate from Gujarat University with a Bachelor's degree in Information Technology (BSc IT). I am passionate about pursuing a career as a Data Analyst, where I can leverage my skills in data analysis and visualization to uncover insights and drive decision-making.</p>
+
+            <p>Currently, I reside in Ahmedabad, where I am actively seeking opportunities to apply my knowledge in real-world scenarios and contribute to data-driven projects. My academic background has equipped me with a solid foundation in IT, and I am enthusiastic about using data to solve complex problems and make impactful contributions..</p>
+            
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h1>Projects</h1>
+        <div class="container">
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Projects/1.jpg" class="card-img-top" alt="Project 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Analyzed Blink IT’s grocery sales data, visualizing key metrics and sales distribution across various factors. Provided actionable insights for optimizing inventory and marketing strategies using Power BI Desktop and Excel, which enhanced sales and store operations.</p>
+                            <a href="https://drive.google.com/file/d/1x8F5-MjDCFfaICv2393GUe01rwsw9-Zd/view?usp=drive_link" class="btn btn-primary btn-custom" target="_blank">View Full Dashboard</a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Projects/2.jpg" class="card-img-top" alt="Project 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Developed a dashboard for analyzing coffee shop sales, visualizing key metrics such as total sales, average sales per day, and customer preferences. Utilized data to identify trends and optimize inventory and promotional strategies. Technologies used included Power BI Desktop and Excel.</p>
+                            <a href="https://drive.google.com/file/d/1_qRxTQRTEawtX3Y80mKMX-df6wvzyhcY/view?usp=sharing" class="btn btn-primary btn-custom" target="_blank">View Full Dashboard</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Projects/3.png" class="card-img-top" alt="Project 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Developed a dashboard to analyze UK road accident data for 2022, visualizing trends, casualty breakdowns, and high-risk areas. Included geospatial analysis to identify accident hotspots using Tableau and Excel, helping stakeholders improve road safety through data-driven insights..</p>
+                            <a href="https://drive.google.com/file/d/1lvqHNISxwCVkIJZMe5KTUwV2Qmy4kiw8/view?usp=drive_link" class="btn btn-primary btn-custom" target="_blank">View Full Dashboard</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h1>Skills</h1>
+        <div class="container">
+            <div class="row">
+                <!-- Skill Card 1 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/Skills/1.jpg" class="card-img-top" alt="Python Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Proficient in Python for data analysis and scripting, with experience in libraries such as Pandas and NumPy for data manipulation and analysis.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/Skills/2.jpg" class="card-img-top" alt="Data Visualization Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">Skilled in creating insightful visualizations using tools like Tableau and Power BI, with a focus on translating complex data into clear, actionable insights.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/Skills/3.jpg" class="card-img-top" alt="SQL Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Excel</h5>
+                            <p class="card-text">Competent in Excel for data analysis, including the use of formulas, pivot tables, and charts to manage and analyze data effectively.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/Skills/4.jpg" class="card-img-top" alt="Data Storytelling Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Storytelling</h5>
+                            <p class="card-text">Ability to craft compelling narratives from data, combining visualizations and insights to communicate findings and support data-driven decision-making.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact-section" id="contact">
+        <h1>Contact Me</h1>
+        <div class="container">
+            <div class="contact-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-envelope"></i>
+                            <p class="ml-2">sadafnaazsaiyed5@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-phone-alt"></i>
+                            <p class="ml-2">+91 9978632432</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sadafnaaz-saiyed-a2a900228" class="btn btn-tooltip" data-tooltip="LinkedIn">
+                    <img src="Icons/l.jpg" alt="LinkedIn Icon">
+                </a>
+                <a href="https://wa.me/919978632432" class="btn btn-tooltip" data-tooltip="WhatsApp">
+                    <img src="Icons/w.jpg" alt="WhatsApp Icon">
+                </a>
+                <a href="https://mailto:sadafnaazsaiyed5@gmail.com" class="btn btn-tooltip" data-tooltip="Gmail">
+                    <img src="Icons/g.jpg" alt="Gmail Icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap and Font Awesome JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
